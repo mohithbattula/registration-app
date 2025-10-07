@@ -1,5 +1,6 @@
 package com.registration.example.registration.controllers;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import com.registration.example.registration.models.User;
 import com.registration.example.registration.repository.UserRepository;
@@ -18,7 +19,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
 
-@RestController
+@Controller
 public class RegistrationController {
     @RequestMapping("/registration-page")
     public ModelAndView controller() {
